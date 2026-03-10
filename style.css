@@ -285,7 +285,7 @@ a {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 100svh;
     display: flex;
     align-items: center;
     position: relative;
@@ -700,6 +700,51 @@ textarea.form-control {
     color: #fff;
 }
 
+/* Quem Somos */
+.quem-somos-wrap {
+    gap: 60px;
+    align-items: center;
+}
+.historia-texto p {
+    margin-bottom: 15px;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+.image-stack {
+    position: relative;
+    height: 500px;
+    background: url('assets/equipe.png') center/cover no-repeat;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--glass-border);
+}
+.badge-founder {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: linear-gradient(135deg, var(--bg-dark), var(--bg-darker));
+    border: 1px solid var(--primary);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+.badge-founder i {
+    font-size: 2rem;
+    color: var(--primary);
+}
+.badge-founder span {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+.badge-founder strong {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
 /* Animations added via JS class */
 .aos-element {
     opacity: 0;
@@ -741,6 +786,9 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+    .section-padding { padding: 60px 0; }
+    .container { padding: 0 20px; }
+
     .nav-links {
         position: fixed;
         top: 80px;
