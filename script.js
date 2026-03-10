@@ -77,6 +77,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Slideshow for "Quem Somos"
+    const slideStack = document.getElementById('slideshow-stack');
+    if (slideStack) {
+        const slides = slideStack.querySelectorAll('.slide-bg');
+        let currentSlide = 0;
+        
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 3500); // 3.5 segundos por slide
+    }
+
     // Form submission intercept for WhatsApp
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
