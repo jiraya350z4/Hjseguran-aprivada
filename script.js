@@ -103,3 +103,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Modal Logic
+function openModal(imageSrc) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    modal.style.display = "flex";
+    modalImg.src = imageSrc;
+}
+
+function closeModal() {
+    const modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+}
+
+// Fechar ao clicar fora da imagem
+window.onclick = function(event) {
+    const modal = document.getElementById("imageModal");
+    if (event.target == modal) {
+        closeModal();
+    }
+}

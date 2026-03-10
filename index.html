@@ -61,37 +61,6 @@
         </div>
     </section>
 
-    <!-- Quem Somos -->
-    <section id="quem-somos" class="quem-somos section-padding bg-darker">
-        <div class="container">
-            <div class="grid grid-2 quem-somos-wrap">
-                <div class="quem-somos-content" data-aos="fade-right">
-                    <div class="section-title text-left" style="margin-bottom: 30px;">
-                        <h2>Nossa História</h2>
-                        <p>Proteção patrimonial e cuidado humano nascidos em Diadema</p>
-                    </div>
-                    <div class="historia-texto">
-                        <p>Nascida no coração de <strong>Diadema</strong>, a <strong>HJ Segurança Privada</strong> carrega na sua essência o verdadeiro significado de proteção patrimonial e cuidado humano.</p>
-                        <p>Nossa trajetória não começou há 5 anos — quando a empresa foi oficialmente fundada —, mas muito antes disso. Tudo começou com a visão de <strong>Antonio Henrique</strong>, nosso fundador, cuja paixão por segurança e excelência operacional o levou a acumular mais de 15 anos de atuação incansável na área.</p>
-                        <p>Essa experiência prática de mais de uma década e meia nas linhas de frente da segurança corporativa, eventos e escolta de ativos de alto valor, moldou os alicerces do que somos hoje. Antonio entendeu que a verdadeira segurança não se trata de apenas estar presente, mas de prever cenários, agir de forma integrada e, acima de tudo, garantir a <strong class="gold-text">tranquilidade inabalável</strong> e a <strong class="gold-text">confiança absoluta</strong> dos clientes.</p>
-                        <p>Hoje, a <strong>HJ Segurança Privada</strong> não é apenas uma prestadora de serviços; somos seus parceiros estratégicos. Formamos e disciplinamos nossos colaboradores para espelharem os nossos valores de integridade, resposta rápida e atendimento premium, entregando um ecossistema de proteção completo e personalizado para o seu patrimônio.</p>
-                    </div>
-                </div>
-                <div class="quem-somos-image" data-aos="fade-left">
-                    <div class="image-stack glass-card">
-                        <div class="badge-founder">
-                            <i class="fas fa-certificate"></i>
-                            <div>
-                                <span>Fundação em</span>
-                                <strong>Diadema</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Nossos Diferenciais -->
     <section class="diferenciais section-padding">
         <div class="container">
@@ -247,8 +216,47 @@
         </div>
     </section>
 
+    <!-- Quem Somos -->
+    <section id="quem-somos" class="quem-somos section-padding bg-darker">
+        <div class="container">
+            <div class="grid grid-2 quem-somos-wrap">
+                <div class="quem-somos-content" data-aos="fade-right">
+                    <div class="section-title text-left" style="margin-bottom: 30px;">
+                        <h2>Nossa História</h2>
+                        <p>Proteção patrimonial e cuidado humano nascidos em Diadema</p>
+                    </div>
+                    <div class="historia-texto">
+                        <p>Nascida no coração de <strong>Diadema</strong>, a <strong>HJ Segurança Privada</strong> carrega na sua essência o verdadeiro significado de proteção patrimonial e cuidado humano.</p>
+                        <p>Nossa trajetória não começou há 5 anos — quando a empresa foi oficialmente fundada —, mas muito antes disso. Tudo começou com a visão de <strong>Antonio Henrique Xavier</strong>, nosso fundador, cuja paixão por segurança e excelência operacional o levou a acumular mais de 15 anos de atuação incansável na área.</p>
+                        <p>Essa experiência prática de mais de uma década e meia nas linhas de frente da segurança corporativa, eventos e escolta de ativos de alto valor, moldou os alicerces do que somos hoje. Antonio entendeu que a verdadeira segurança não se trata de apenas estar presente, mas de prever cenários, agir de forma integrada e, acima de tudo, garantir a <strong class="gold-text">tranquilidade inabalável</strong> e a <strong class="gold-text">confiança absoluta</strong> dos clientes.</p>
+                        <p>Hoje, a <strong>HJ Segurança Privada</strong> não é apenas uma prestadora de serviços; somos seus parceiros estratégicos. Formamos e disciplinamos nossos colaboradores para espelharem os nossos valores de integridade, resposta rápida e atendimento premium, entregando um ecossistema de proteção completo e personalizado para o seu patrimônio e sua família.</p>
+                    </div>
+                </div>
+                <div class="quem-somos-image" data-aos="fade-left">
+                    <div class="image-stack glass-card">
+                        <div class="badge-founder">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <span>Fundação em</span>
+                                <strong>Diadema</strong>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-thumbnails mt-3">
+                        <img src="assets/01.jpeg" alt="Foto do Fundador 1" class="thumb-img" onclick="openModal(this.src)">
+                        <img src="assets/02.jpeg" alt="Foto do Fundador 2" class="thumb-img" onclick="openModal(this.src)">
+                        <img src="assets/03.jpeg" alt="Foto do Fundador 3" class="thumb-img" onclick="openModal(this.src)">
+                        <img src="assets/04.jpeg" alt="Foto do Fundador 4" class="thumb-img" onclick="openModal(this.src)">
+                        <img src="assets/05.jpeg" alt="Foto do Fundador 5" class="thumb-img" onclick="openModal(this.src)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contato -->
-    <section id="contato" class="contato section-padding bg-darker">
+    <section id="contato" class="contato section-padding">
         <div class="container">
             <div class="grid grid-2 contato-wrap">
                 <div class="contato-info" data-aos="fade-right">
@@ -373,6 +381,12 @@
     <a href="https://wa.me/5511980609454" target="_blank" class="whatsapp-fab" aria-label="Fale conosco no WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <!-- Modal de Imagem -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
 
     <script src="script.js"></script>
 </body>

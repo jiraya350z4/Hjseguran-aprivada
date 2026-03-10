@@ -745,6 +745,80 @@ textarea.form-control {
     font-size: 1.2rem;
 }
 
+/* Galeria do Fundador */
+.gallery-thumbnails {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.thumb-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.thumb-img:hover {
+    border-color: var(--primary);
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+}
+
+/* Modal UI */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.95);
+    backdrop-filter: blur(8px);
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    object-fit: contain;
+    animation: zoom 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+@keyframes zoom {
+    from {transform: scale(0.8); opacity: 0}
+    to {transform: scale(1); opacity: 1}
+}
+
+.close-modal {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: var(--primary);
+    text-decoration: none;
+}
+
 /* Animations added via JS class */
 .aos-element {
     opacity: 0;
