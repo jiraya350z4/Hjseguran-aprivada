@@ -893,21 +893,24 @@ textarea.form-control {
     .nav-links {
         position: fixed;
         top: 80px;
-        left: -100vw;
-        width: 100vw;
+        right: -100%;
+        width: 100%;
         height: calc(100vh - 80px);
-        margin-left: 0;
+        margin: 0;
+        padding: 0;
         background: rgba(5, 5, 5, 0.95);
         backdrop-filter: blur(15px);
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: var(--transition);
-        border-right: 1px solid var(--glass-border);
+        transition: transform 0.4s ease-in-out;
+        transform: translateX(100%);
+        border-left: 1px solid var(--glass-border);
     }
 
     .nav-links.active {
-        left: 0;
+        transform: translateX(0);
+        right: 0;
     }
 
     .menu-toggle {
